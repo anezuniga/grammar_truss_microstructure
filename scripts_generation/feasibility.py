@@ -49,7 +49,7 @@ def fulfill_vertex(vertices, vertex_index, connection_matrix):
         if other_face_count >= 1:
             return True
     else:
-        # Check if it has 2 any connections
-        if len(connected_vertices) >= 2:
+        # Check if it has 2 any connections (+1 itself)
+        if len(connected_vertices) >= 3:
             return True
     return False
